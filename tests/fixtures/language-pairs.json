@@ -1,0 +1,19 @@
+{
+  "language_pairs": [
+    {
+      "language_pair_id": 7,
+      "source_language_id": 19,
+      "target_language_id": 15,
+      "source_language_locale": "aa-aa",
+      "target_language_locale": "bb",
+      "target_language_image": "https://static.memrise.example/images/target.png",
+      "target_language_flag_image": "https://static.memrise.example/images/target_flag.png",
+      "source_language_name": "Alpha",
+      "target_language_name": "Beta",
+      "target_language_photo_url": "https://static.memrise.example/images/target_photo.png",
+      "type": "official",
+      "is_script": false,
+      "supports_pronunciation": true
+    }
+  ]
+}

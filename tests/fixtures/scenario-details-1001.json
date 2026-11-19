@@ -1,0 +1,101 @@
+{
+  "learnables": [
+    {
+      "learnable_id": 65530000065536,
+      "target_value": "the table",
+      "source_value": "tr: the table",
+      "growth_level": 10,
+      "already_known": false,
+      "difficult": false,
+      "due_for_review": false
+    },
+    {
+      "learnable_id": 65530000131072,
+      "target_value": "the door",
+      "source_value": "tr: the door",
+      "growth_level": 10,
+      "already_known": false,
+      "difficult": false,
+      "due_for_review": false
+    },
+    {
+      "learnable_id": 65530000196608,
+      "target_value": "the plate",
+      "source_value": "tr: the plate",
+      "growth_level": 10,
+      "already_known": false,
+      "difficult": false,
+      "due_for_review": false
+    },
+    {
+      "learnable_id": 65530000262144,
+      "target_value": "the plates",
+      "source_value": "tr: the plates",
+      "growth_level": 10,
+      "already_known": false,
+      "difficult": false,
+      "due_for_review": false
+    },
+    {
+      "learnable_id": 65530000327680,
+      "target_value": "the plate is on the table",
+      "source_value": "tr: the plate is on the table",
+      "growth_level": 10,
+      "already_known": false,
+      "difficult": false,
+      "due_for_review": false
+    },
+    {
+      "learnable_id": 65530000393216,
+      "target_value": "the bedroom is small",
+      "source_value": "tr: the bedroom is small",
+      "growth_level": 10,
+      "already_known": false,
+      "difficult": false,
+      "due_for_review": false
+    },
+    {
+      "learnable_id": 65530000458752,
+      "target_value": "five",
+      "source_value": "tr: five",
+      "growth_level": 10,
+      "already_known": false,
+      "difficult": false,
+      "due_for_review": false
+    },
+    {
+      "learnable_id": 65530000524288,
+      "target_value": "six",
+      "source_value": "tr: six",
+      "growth_level": 10,
+      "already_known": false,
+      "difficult": false,
+      "due_for_review": false
+    },
+    {
+      "learnable_id": 65530000589824,
+      "target_value": "the wardrobe",
+      "source_value": "tr: the wardrobe",
+      "growth_level": 10,
+      "already_known": false,
+      "difficult": false,
+      "due_for_review": false
+    },
+    {
+      "learnable_id": 65530000655360,
+      "target_value": "the lamp is on",
+      "source_value": "tr: the lamp is on",
+      "growth_level": 10,
+      "already_known": false,
+      "difficult": false,
+      "due_for_review": false
+    }
+  ],
+  "completed": true,
+  "is_locked": false,
+  "number_of_learnables": 15,
+  "items_learned": 15,
+  "date_started": "2030-01-01T10:00:00.000000Z",
+  "date_completed": "2030-01-01T10:12:00.000000Z",
+  "content_media_id": null
+}

@@ -1,0 +1,91 @@
+{
+  "scenarios": [
+    {
+      "scenario_id": 2005,
+      "title": "Lesson Alpha",
+      "photo_url": "https://static.memrise.example/images/scenario.png",
+      "is_premium": true,
+      "is_locked": false,
+      "number_of_learnables": 26,
+      "topic": {
+        "topic_id": 11,
+        "name": "Topic One",
+        "icon_url": "https://static.memrise.example/icons/topic.png"
+      },
+      "progress": {
+        "items_learned": 26,
+        "progress_percent": 100
+      }
+    },
+    {
+      "scenario_id": 2004,
+      "title": "Lesson Beta",
+      "photo_url": "https://static.memrise.example/images/scenario.png",
+      "is_premium": true,
+      "is_locked": false,
+      "number_of_learnables": 10,
+      "topic": {
+        "topic_id": 1,
+        "name": "Topic Two",
+        "icon_url": "https://static.memrise.example/icons/topic.png"
+      },
+      "progress": {
+        "items_learned": 10,
+        "progress_percent": 100
+      }
+    },
+    {
+      "scenario_id": 2003,
+      "title": "Lesson Gamma",
+      "photo_url": "https://static.memrise.example/images/scenario.png",
+      "is_premium": true,
+      "is_locked": false,
+      "number_of_learnables": 27,
+      "topic": {
+        "topic_id": 7,
+        "name": "Topic Three",
+        "icon_url": "https://static.memrise.example/icons/topic.png"
+      },
+      "progress": {
+        "items_learned": 27,
+        "progress_percent": 100
+      }
+    },
+    {
+      "scenario_id": 2002,
+      "title": "Lesson Delta",
+      "photo_url": "https://static.memrise.example/images/scenario.png",
+      "is_premium": false,
+      "is_locked": false,
+      "number_of_learnables": 19,
+      "topic": {
+        "topic_id": 9,
+        "name": "Topic Four",
+        "icon_url": "https://static.memrise.example/icons/topic.png"
+      },
+      "progress": {
+        "items_learned": 19,
+        "progress_percent": 100
+      }
+    },
+    {
+      "scenario_id": 2001,
+      "title": "Lesson Epsilon",
+      "photo_url": "https://static.memrise.example/images/scenario.png",
+      "is_premium": true,
+      "is_locked": false,
+      "number_of_learnables": 32,
+      "topic": {
+        "topic_id": 141,
+        "name": "Topic Five",
+        "icon_url": "https://static.memrise.example/icons/topic.png"
+      },
+      "progress": {
+        "items_learned": 32,
+        "progress_percent": 100
+      }
+    }
+  ],
+  "has_more_pages": true,
+  "total_number": 6
+}

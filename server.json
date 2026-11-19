@@ -1,0 +1,65 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.volodymyrkoval/memrise-mcp",
+  "description": "Unofficial read-only MCP server for your own Memrise words and lessons",
+  "repository": {
+    "url": "https://github.com/volodymyrkoval/memrise-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "memrise-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MEMRISE_USERNAME",
+          "description": "Your Memrise login (e-mail or username).",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "MEMRISE_PASSWORD",
+          "description": "Your Memrise password. Never stored; only a login token is cached.",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "MEMRISE_LANGUAGE_PAIR_ID",
+          "description": "Which course (language pair) to read. Only needed if the account has several; language_pairs_list shows the ids.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        },
+        {
+          "name": "MEMRISE_CACHE_DIR",
+          "description": "Cache folder, an absolute path. Default: the platform cache folder under memrise-mcp.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        },
+        {
+          "name": "MEMRISE_WORDS_TTL_SECONDS",
+          "description": "How long the word list is cached, in seconds. Default 3600; 0 turns it off.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        },
+        {
+          "name": "MEMRISE_DEBUG",
+          "description": "Set to 1 to write debug lines to stderr.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}

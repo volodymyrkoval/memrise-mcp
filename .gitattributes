@@ -1,0 +1,2 @@
+# Check out text files with LF on every OS (Windows runners default to CRLF), so tests and fixtures read the same bytes everywhere.
+* text=auto eol=lf

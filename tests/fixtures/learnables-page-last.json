@@ -1,0 +1,197 @@
+{
+  "learnables": [
+    {
+      "learnable_id_key": 65520000065536,
+      "source_value": "tr: Monday",
+      "target_value": "Monday",
+      "audios": [
+        "https://static.memrise.example/audio/21_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "Monday",
+      "growth_level": 9,
+      "known": true,
+      "difficult": false,
+      "excluded": false,
+      "next_review": null,
+      "due_for_review": false,
+      "learned": false,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65520000131072,
+      "source_value": "tr: Tuesday",
+      "target_value": "Tuesday",
+      "audios": [
+        "https://static.memrise.example/audio/22_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "Tuesday",
+      "growth_level": 9,
+      "known": true,
+      "difficult": false,
+      "excluded": false,
+      "next_review": null,
+      "due_for_review": false,
+      "learned": false,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65520000196608,
+      "source_value": "tr: Wednesday",
+      "target_value": "Wednesday",
+      "audios": [
+        "https://static.memrise.example/audio/23_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "Wednesday",
+      "growth_level": 9,
+      "known": true,
+      "difficult": false,
+      "excluded": false,
+      "next_review": null,
+      "due_for_review": false,
+      "learned": false,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65520000262144,
+      "source_value": "tr: Thursday",
+      "target_value": "Thursday",
+      "audios": [
+        "https://static.memrise.example/audio/24_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "Thursday",
+      "growth_level": 9,
+      "known": true,
+      "difficult": false,
+      "excluded": false,
+      "next_review": null,
+      "due_for_review": false,
+      "learned": false,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65520000327680,
+      "source_value": "tr: Friday",
+      "target_value": "Friday",
+      "audios": [
+        "https://static.memrise.example/audio/25_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "Friday",
+      "growth_level": 9,
+      "known": true,
+      "difficult": false,
+      "excluded": false,
+      "next_review": null,
+      "due_for_review": false,
+      "learned": false,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65520000393216,
+      "source_value": "tr: Saturday",
+      "target_value": "Saturday",
+      "audios": [
+        "https://static.memrise.example/audio/26_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "Saturday",
+      "growth_level": 9,
+      "known": true,
+      "difficult": false,
+      "excluded": false,
+      "next_review": null,
+      "due_for_review": false,
+      "learned": false,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65520000458752,
+      "source_value": "tr: Sunday",
+      "target_value": "Sunday",
+      "audios": [
+        "https://static.memrise.example/audio/27_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "Sunday",
+      "growth_level": 9,
+      "known": true,
+      "difficult": false,
+      "excluded": false,
+      "next_review": null,
+      "due_for_review": false,
+      "learned": false,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65520000524288,
+      "source_value": "tr: yellow",
+      "target_value": "yellow",
+      "audios": [
+        "https://static.memrise.example/audio/28_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "yellow",
+      "growth_level": 9,
+      "known": true,
+      "difficult": false,
+      "excluded": false,
+      "next_review": null,
+      "due_for_review": false,
+      "learned": false,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65520000589824,
+      "source_value": "tr: black",
+      "target_value": "black",
+      "audios": [
+        "https://static.memrise.example/audio/29_m.mp3",
+        "https://static.memrise.example/audio/29_f.mp3"
+      ],
+      "romanization": null,
+      "native_script": "black",
+      "growth_level": 9,
+      "known": true,
+      "difficult": false,
+      "excluded": false,
+      "next_review": null,
+      "due_for_review": false,
+      "learned": false,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65520000655360,
+      "source_value": "tr: white",
+      "target_value": "white",
+      "audios": [
+        "https://static.memrise.example/audio/30_m.mp3",
+        "https://static.memrise.example/audio/30_f.mp3"
+      ],
+      "romanization": null,
+      "native_script": "white",
+      "growth_level": 9,
+      "known": true,
+      "difficult": false,
+      "excluded": false,
+      "next_review": null,
+      "due_for_review": false,
+      "learned": false,
+      "heard": false,
+      "used": false
+    }
+  ],
+  "next_page_token": null
+}

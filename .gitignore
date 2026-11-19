@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+.cache/
+*.session.json
+scratch/
+.probe-out/
+.claude/
+docs/brief.md
+docs/plans/
+.idea/
+.DS_Store

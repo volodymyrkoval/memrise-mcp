@@ -1,0 +1,195 @@
+{
+  "learnables": [
+    {
+      "learnable_id_key": 65510000065536,
+      "source_value": "tr: a glass",
+      "target_value": "a glass",
+      "audios": [
+        "https://static.memrise.example/audio/11_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "a glass",
+      "growth_level": 9,
+      "known": false,
+      "difficult": false,
+      "excluded": false,
+      "next_review": "2030-02-01T00:00:00Z",
+      "due_for_review": false,
+      "learned": true,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65510000131072,
+      "source_value": "tr: the knife",
+      "target_value": "the knife",
+      "audios": [
+        "https://static.memrise.example/audio/12_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "the knife",
+      "growth_level": 9,
+      "known": false,
+      "difficult": false,
+      "excluded": false,
+      "next_review": "2030-02-01T00:00:00Z",
+      "due_for_review": false,
+      "learned": true,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65510000196608,
+      "source_value": "tr: to give",
+      "target_value": "to give",
+      "audios": [
+        "https://static.memrise.example/audio/13_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "to give",
+      "growth_level": 9,
+      "known": false,
+      "difficult": false,
+      "excluded": false,
+      "next_review": "2030-02-01T00:00:00Z",
+      "due_for_review": false,
+      "learned": true,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65510000262144,
+      "source_value": "tr: the fork",
+      "target_value": "the fork",
+      "audios": [
+        "https://static.memrise.example/audio/14_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "the fork",
+      "growth_level": 9,
+      "known": false,
+      "difficult": false,
+      "excluded": false,
+      "next_review": "2030-02-01T00:00:00Z",
+      "due_for_review": false,
+      "learned": true,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65510000327680,
+      "source_value": "tr: the spoon",
+      "target_value": "the spoon",
+      "audios": [
+        "https://static.memrise.example/audio/15_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "the spoon",
+      "growth_level": 9,
+      "known": false,
+      "difficult": false,
+      "excluded": false,
+      "next_review": "2030-02-01T00:00:00Z",
+      "due_for_review": false,
+      "learned": true,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65510000393216,
+      "source_value": "tr: the bed is big",
+      "target_value": "the bed is big",
+      "audios": [
+        "https://static.memrise.example/audio/16_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "the bed is big",
+      "growth_level": 9,
+      "known": false,
+      "difficult": false,
+      "excluded": false,
+      "next_review": "2030-02-01T00:00:00Z",
+      "due_for_review": false,
+      "learned": true,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65510000458752,
+      "source_value": "tr: the coffee",
+      "target_value": "the café",
+      "audios": [
+        "https://static.memrise.example/audio/17_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "the café",
+      "growth_level": 9,
+      "known": false,
+      "difficult": false,
+      "excluded": false,
+      "next_review": "2030-02-01T00:00:00Z",
+      "due_for_review": false,
+      "learned": true,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65510000524288,
+      "source_value": "tr: the window is closed",
+      "target_value": "the window is closed",
+      "audios": [
+        "https://static.memrise.example/audio/18_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "the window is closed",
+      "growth_level": 9,
+      "known": false,
+      "difficult": false,
+      "excluded": false,
+      "next_review": "2030-02-01T00:00:00Z",
+      "due_for_review": false,
+      "learned": true,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65510000589824,
+      "source_value": "tr: the sofa",
+      "target_value": "the sofa",
+      "audios": [
+        "https://static.memrise.example/audio/19_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "the sofa",
+      "growth_level": 9,
+      "known": false,
+      "difficult": false,
+      "excluded": false,
+      "next_review": "2030-02-01T00:00:00Z",
+      "due_for_review": false,
+      "learned": true,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65510000655360,
+      "source_value": "tr: red",
+      "target_value": "red",
+      "audios": [
+        "https://static.memrise.example/audio/20_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "red",
+      "growth_level": 9,
+      "known": false,
+      "difficult": false,
+      "excluded": false,
+      "next_review": "2030-02-01T00:00:00Z",
+      "due_for_review": false,
+      "learned": true,
+      "heard": false,
+      "used": false
+    }
+  ],
+  "next_page_token": "<page-token-2>"
+}

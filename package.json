@@ -1,0 +1,58 @@
+{
+  "name": "memrise-mcp",
+  "version": "0.1.0",
+  "description": "Unofficial read-only MCP server and export command for your own Memrise learner data",
+  "mcpName": "io.github.volodymyrkoval/memrise-mcp",
+  "homepage": "https://github.com/volodymyrkoval/memrise-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/volodymyrkoval/memrise-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "memrise",
+    "language-learning",
+    "claude",
+    "spaced-repetition"
+  ],
+  "license": "MIT",
+  "author": "volodymyrkoval <volodymyr.v.koval@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volodymyrkoval/memrise-mcp.git"
+  },
+  "type": "module",
+  "bin": {
+    "memrise-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepare": "npm run build",
+    "smoke": "tsx scripts/smoke.ts",
+    "smoke:startup": "tsx scripts/startupSmoke.ts",
+    "test": "vitest run --passWithNoTests",
+    "test:realfs": "vitest run --config vitest.realfs.config.ts",
+    "typecheck": "tsc --noEmit",
+    "probe": "tsx scripts/probe/runProbe.ts",
+    "check-secrets": "tsx scripts/checkSecrets.ts",
+    "check-versions": "tsx scripts/checkVersions.ts",
+    "prepublishOnly": "npm run check-versions && npm run typecheck && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsup": "^9.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.1"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  }
+}

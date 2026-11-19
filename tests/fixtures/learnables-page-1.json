@@ -1,0 +1,201 @@
+{
+  "learnables": [
+    {
+      "learnable_id_key": 65500000065536,
+      "source_value": "tr: the book",
+      "target_value": "the book",
+      "audios": [
+        "https://static.memrise.example/audio/1_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "the book",
+      "growth_level": 13,
+      "known": false,
+      "difficult": false,
+      "excluded": false,
+      "next_review": "2030-01-01T00:00:00Z",
+      "due_for_review": true,
+      "learned": true,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65500000131072,
+      "source_value": "tr: to eat",
+      "target_value": "to eat",
+      "audios": [
+        "https://static.memrise.example/audio/2_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "to eat",
+      "growth_level": 9,
+      "known": false,
+      "difficult": false,
+      "excluded": false,
+      "next_review": "2030-02-01T00:00:00Z",
+      "due_for_review": false,
+      "learned": true,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65500000196608,
+      "source_value": "tr: the key is on the table",
+      "target_value": "the key is on the table",
+      "audios": [
+        "https://static.memrise.example/audio/3_m.mp3",
+        "https://static.memrise.example/audio/3_f.mp3",
+        "https://static.memrise.example/audio/3_f.mp3"
+      ],
+      "romanization": null,
+      "native_script": "the key is on the table",
+      "growth_level": 9,
+      "known": false,
+      "difficult": false,
+      "excluded": false,
+      "next_review": "2030-02-01T00:00:00Z",
+      "due_for_review": false,
+      "learned": true,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65500000262144,
+      "source_value": "tr: to drink",
+      "target_value": "to drink",
+      "audios": [
+        "https://static.memrise.example/audio/4_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "to drink",
+      "growth_level": 9,
+      "known": false,
+      "difficult": false,
+      "excluded": false,
+      "next_review": "2030-02-01T00:00:00Z",
+      "due_for_review": false,
+      "learned": true,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65500000327680,
+      "source_value": "tr: the book is in the kitchen",
+      "target_value": "the book is in the kitchen",
+      "audios": [
+        "https://static.memrise.example/audio/5_m.mp3",
+        "https://static.memrise.example/audio/5_f.mp3"
+      ],
+      "romanization": null,
+      "native_script": "the book is in the kitchen",
+      "growth_level": 9,
+      "known": false,
+      "difficult": false,
+      "excluded": false,
+      "next_review": "2030-02-01T00:00:00Z",
+      "due_for_review": false,
+      "learned": true,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65500000393216,
+      "source_value": "tr: to read",
+      "target_value": "to read",
+      "audios": [
+        "https://static.memrise.example/audio/6_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "to read",
+      "growth_level": 9,
+      "known": false,
+      "difficult": false,
+      "excluded": false,
+      "next_review": "2030-02-01T00:00:00Z",
+      "due_for_review": false,
+      "learned": true,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65500000458752,
+      "source_value": "tr: the door is open",
+      "target_value": "the door is open",
+      "audios": [
+        "https://static.memrise.example/audio/7_m.mp3",
+        "https://static.memrise.example/audio/7_f.mp3"
+      ],
+      "romanization": null,
+      "native_script": "the door is open",
+      "growth_level": 9,
+      "known": false,
+      "difficult": false,
+      "excluded": false,
+      "next_review": "2030-02-01T00:00:00Z",
+      "due_for_review": false,
+      "learned": true,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65500000524288,
+      "source_value": "tr: the car is blue",
+      "target_value": "the car is blue",
+      "audios": [
+        "https://static.memrise.example/audio/8_m.mp3",
+        "https://static.memrise.example/audio/8_f.mp3"
+      ],
+      "romanization": null,
+      "native_script": "the car is blue",
+      "growth_level": 9,
+      "known": false,
+      "difficult": false,
+      "excluded": false,
+      "next_review": "2030-02-01T00:00:00Z",
+      "due_for_review": false,
+      "learned": true,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65500000589824,
+      "source_value": "tr: the key and the book are here",
+      "target_value": "the key and the book are here",
+      "audios": [
+        "https://static.memrise.example/audio/9_m.mp3",
+        "https://static.memrise.example/audio/9_f.mp3"
+      ],
+      "romanization": null,
+      "native_script": "the key and the book are here",
+      "growth_level": 9,
+      "known": false,
+      "difficult": false,
+      "excluded": false,
+      "next_review": "2030-02-01T00:00:00Z",
+      "due_for_review": false,
+      "learned": true,
+      "heard": false,
+      "used": false
+    },
+    {
+      "learnable_id_key": 65500000655360,
+      "source_value": "tr: the chair",
+      "target_value": "the chair",
+      "audios": [
+        "https://static.memrise.example/audio/10_m.mp3"
+      ],
+      "romanization": null,
+      "native_script": "the chair",
+      "growth_level": 9,
+      "known": false,
+      "difficult": false,
+      "excluded": false,
+      "next_review": "2030-02-01T00:00:00Z",
+      "due_for_review": false,
+      "learned": true,
+      "heard": false,
+      "used": false
+    }
+  ],
+  "next_page_token": "<page-token-1>"
+}
