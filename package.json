@@ -1,6 +1,6 @@
 {
   "name": "memrise-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Unofficial read-only MCP server and export command for your own Memrise learner data",
   "mcpName": "io.github.volodymyrkoval/memrise-mcp",
   "homepage": "https://github.com/volodymyrkoval/memrise-mcp#readme",
