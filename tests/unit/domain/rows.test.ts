@@ -17,6 +17,7 @@ describe('toWordRow', () => {
     const lessons = [{ scenarioId: 1, title: 'Lesson Epsilon', topic: 'Trips' }];
 
     expect(toWordRow(learnable, lessons, { includeAudio: true })).toEqual({
+      id: 7,
       word: 'the book',
       translation: 'tr: the book',
       growth_level: 13,
@@ -150,6 +151,7 @@ describe('toScenarioWordRow', () => {
     const lessons = [{ scenarioId: 1, title: 'Lesson Epsilon', topic: 'Trips' }];
 
     expect(toScenarioWordRow(detail, enrichment, lessons, { includeAudio: true })).toEqual({
+      id: 7,
       word: 'the book',
       translation: 'tr: the book',
       growth_level: 10,

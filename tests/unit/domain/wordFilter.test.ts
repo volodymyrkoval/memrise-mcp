@@ -5,6 +5,7 @@ import { UsageError } from '../../../src/errors.js';
 
 function row(overrides: Partial<WordRow> = {}): WordRow {
   return {
+    id: 1,
     word: 'apple',
     translation: 'tr: apple',
     growth_level: 3,

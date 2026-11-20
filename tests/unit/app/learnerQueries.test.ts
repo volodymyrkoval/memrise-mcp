@@ -107,6 +107,7 @@ describe('LearnerQueries listWords', () => {
 
     expect(result).toMatchObject({ total: 3, returned: 3, truncated: false });
     expect(result.words[0]).toEqual({
+      id: 1,
       word: 'the book',
       translation: 'tr: the book',
       growth_level: 2,

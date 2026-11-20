@@ -162,7 +162,7 @@ Writes your words, lessons and a `fetched_at` timestamp to one JSON file. It alw
 | `scenarios_list` | Your lessons, newest first. Filter with `type` (`completed` or `in_progress`) and `since` (see Dates below). |
 | `scenario_learnables` | The words of one lesson. |
 
-Each word comes back as `word` (as written in the language you are learning) and `translation` (its meaning in your own language), with its growth level, lessons and topics. The `export` file uses the same keys.
+Each word comes back as `id` (Memrise's numeric id for the word, the same in every lesson), `word` (as written in the language you are learning) and `translation` (its meaning in your own language), with its growth level, lessons and topics. The `export` file uses the same keys.
 
 **`learnables_list` filters.** All are optional, combine with AND, and apply before paging: `total` counts the matching words, and `after_id` continues inside the filtered list (an `after_id` that the filters exclude is an error). A filter that matches nothing gives `total: 0`. `limit` (default 200) is the page size.
 

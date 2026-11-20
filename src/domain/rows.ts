@@ -7,6 +7,8 @@ import type { DetailLearnable, Learnable, LessonRef, Scenario, ScenarioDetails }
 export type WordOrigin = 'lesson' | 'other' | 'unknown';
 
 export interface WordRow {
+  /** Memrise's numeric id for the word; the same word has the same id in every lesson. */
+  id: number;
   word: string;
   translation: string;
   growth_level: number;
@@ -46,6 +48,7 @@ export interface RowOptions {
 /** One learnable as a word row; `audios` is included only when requested. */
 export function toWordRow(learnable: Learnable, lessons: readonly LessonRef[], options: RowOptions): WordRow {
   const row: WordRow = {
+    id: learnable.id,
     word: learnable.target,
     translation: learnable.source,
     growth_level: learnable.growthLevel,
@@ -74,6 +77,7 @@ export function toScenarioWordRow(
   options: RowOptions,
 ): WordRow {
   const row: WordRow = {
+    id: detail.id,
     word: detail.target,
     translation: detail.source,
     growth_level: detail.growthLevel,
