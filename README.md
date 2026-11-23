@@ -121,7 +121,7 @@ If a desktop app can't start the server, it may be launching it with a minimal `
 
 ### Updating and pinning
 
-`npx -y memrise-mcp` runs the latest release from npm. To pin a version, use `memrise-mcp@0.1.0` instead, for example `"args": ["-y", "memrise-mcp@0.1.0"]`. `npx` caches what it downloads, so to move to a newer release change the version, or delete npx's cache (`rm -rf ~/.npm/_npx`) and restart the client. `npx -y memrise-mcp --version` prints the version and `npx -y memrise-mcp --help` the usage.
+`npx -y memrise-mcp` runs the latest release from npm. To pin a version, use `memrise-mcp@0.1.2` instead, for example `"args": ["-y", "memrise-mcp@0.1.2"]`. `npx` caches what it downloads, so to move to a newer release change the version, or delete npx's cache (`rm -rf ~/.npm/_npx`) and restart the client. `npx -y memrise-mcp --version` prints the version and `npx -y memrise-mcp --help` the usage.
 
 ### Settings (environment variables)
 

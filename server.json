@@ -1,18 +1,19 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.volodymyrkoval/memrise-mcp",
+  "title": "Memrise (unofficial)",
   "description": "Unofficial read-only MCP server for your own Memrise words and lessons",
   "repository": {
     "url": "https://github.com/volodymyrkoval/memrise-mcp",
     "source": "github"
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "packages": [
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "memrise-mcp",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "transport": {
         "type": "stdio"
       },
