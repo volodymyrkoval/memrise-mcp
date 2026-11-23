@@ -16,11 +16,18 @@ import { longestRunWhileOthersWait } from '../helpers/turnTaking.js';
 import { sleep, startChild, type Finished } from './childProcess.js';
 
 /**
- * The pacer keeps 300 ms between the starts it records; a fake request reaches the wire a few ms
- * after that (a cooldown-file read), and timers can fire a millisecond early, so the observed gap
- * may be slightly shorter on a busy CI machine. 250 ms still fails if pacing were per process only.
+ * The pacer promises `MIN_REQUEST_GAP_MS` between the starts it records, and the children log those
+ * recorded starts, so the gap is asserted on them rather than on when a request reached the wire:
+ * that moment trails the recorded start by however long the state-file write and the scheduler take,
+ * which varies per request. The tolerance only covers a timer firing a millisecond early and the
+ * millisecond rounding of `Date.now()`.
  */
-const MIN_OBSERVED_GAP_MS = MIN_REQUEST_GAP_MS - 50;
+const CLOCK_TOLERANCE_MS = 5;
+/**
+ * Breaking a dead holder's lock takes milliseconds; waiting out `STALE_LOCK_AGE_MS` takes over two
+ * minutes. The bound sits far from both, so a slow CI machine cannot trip it and a regression cannot hide.
+ */
+const BREAKS_STALE_LOCK_WITHIN_MS = 30_000;
 /**
  * The processes should alternate. A real scheduler can delay one process's poll past the moment
  * the other leaves the lock free (a loaded CI machine, a Windows timer firing late), so one process
@@ -98,12 +105,15 @@ describe('two processes on one cache folder', () => {
     const logs = await Promise.all(out.map(async (file) => JSON.parse(await readFile(file, 'utf8')) as IntervalLog));
     const requests = logs
       .flatMap((log) => log.intervals.map((interval) => ({ ...interval, pid: log.pid })))
-      .sort((a, b) => a.start - b.start);
+      .sort((a, b) => a.recordedAt - b.recordedAt);
     expect(requests).toHaveLength(2 * perProcess);
+    for (const [i, request] of requests.entries()) {
+      expect(request.start, `request ${i} reached the wire before its start was recorded`).toBeGreaterThanOrEqual(request.recordedAt);
+    }
     for (let i = 1; i < requests.length; i += 1) {
       const [previous, current] = [requests[i - 1], requests[i]];
       expect(current.start, `request ${i} overlaps request ${i - 1}`).toBeGreaterThanOrEqual(previous.end);
-      expect(current.start - previous.start, `gap before request ${i}`).toBeGreaterThanOrEqual(MIN_OBSERVED_GAP_MS);
+      expect(current.recordedAt - previous.recordedAt, `gap before request ${i}`).toBeGreaterThanOrEqual(MIN_REQUEST_GAP_MS - CLOCK_TOLERANCE_MS);
     }
     const order = requests.map((request) => request.pid);
     expect(longestRunWhileOthersWait(order), `senders in start order: ${order.join(' ')}`).toBeLessThanOrEqual(MAX_REQUESTS_IN_A_ROW);
@@ -138,7 +148,7 @@ describe('two processes on one cache folder', () => {
 
     await expect(pacer.run(async () => 'sent')).resolves.toBe('sent');
 
-    expect(Date.now() - startedAt).toBeLessThan(5_000);
+    expect(Date.now() - startedAt).toBeLessThan(BREAKS_STALE_LOCK_WITHIN_MS);
     expect(warnings).toEqual([]);
     expect(existsSync(join(cacheDir, 'pacer.lock'))).toBe(false);
   });
@@ -146,5 +156,6 @@ describe('two processes on one cache folder', () => {
 
 interface IntervalLog {
   pid: number;
-  intervals: Array<{ start: number; end: number }>;
+  /** `recordedAt` is the start the pacer stored for the request; `start`/`end` bracket its time on the wire. */
+  intervals: Array<{ recordedAt: number; start: number; end: number }>;
 }

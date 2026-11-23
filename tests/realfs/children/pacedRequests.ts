@@ -1,7 +1,8 @@
 /**
  * Child process for the shared-pacer test: sends `count` requests through the production HTTP
- * client, pacer and cache-folder lock, over a fake transport that only records when each request
- * was on the wire. Starts once `<go file>` exists, so both children contend for the lock.
+ * client, pacer and cache-folder lock, over a fake transport that records when each request was
+ * on the wire and the start the pacer recorded for it (the moment its gap is measured from).
+ * Starts once `<go file>` exists, so both children contend for the lock.
  * Args: <cache dir> <ready file> <go file> <count> <intervals out file>.
  */
 import { randomUUID } from 'node:crypto';
@@ -10,7 +11,7 @@ import { writeFile } from 'node:fs/promises';
 import { DiskPacerLock } from '../../../src/cache/diskPacerLock.js';
 import { DiskRateLimitStore } from '../../../src/cache/diskRateLimitStore.js';
 import { HttpClient } from '../../../src/http/httpClient.js';
-import { RequestPacer } from '../../../src/http/requestPacer.js';
+import { RequestPacer, type PacerLock } from '../../../src/http/requestPacer.js';
 import type { HttpTransport } from '../../../src/http/transport.js';
 import { failOnWarnLogger, runChild, sleep } from './childSupport.js';
 
@@ -19,16 +20,31 @@ const ON_WIRE_MS = 40;
 
 runChild(async () => {
   const [cacheDir, readyFile, goFile, count, outFile] = process.argv.slice(2);
-  const intervals: Array<{ start: number; end: number }> = [];
+  const intervals: Array<{ recordedAt: number; start: number; end: number }> = [];
+  let recordedAt = 0;
   const transport: HttpTransport = {
     send: async () => {
       const start = Date.now();
       await sleep(ON_WIRE_MS);
-      intervals.push({ start, end: Date.now() });
+      intervals.push({ recordedAt, start, end: Date.now() });
       return { status: 200, setCookies: [], bodyText: '{}' };
     },
   };
-  const lock = new DiskPacerLock({ cacheDir, now: Date.now, sleep, logger: failOnWarnLogger });
+  const diskLock = new DiskPacerLock({ cacheDir, now: Date.now, sleep, logger: failOnWarnLogger });
+  /** The production lock, plus a note of the start the pacer records for each request. */
+  const lock: PacerLock = {
+    acquire: async () => {
+      const slot = await diskLock.acquire();
+      return {
+        lastStart: slot.lastStart,
+        recordStart: (at) => {
+          recordedAt = at;
+          return slot.recordStart(at);
+        },
+        release: () => slot.release(),
+      };
+    },
+  };
   const client = new HttpClient({
     transport,
     pacer: new RequestPacer({ now: Date.now, sleep, lock }),
